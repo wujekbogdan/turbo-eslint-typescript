@@ -1,0 +1,17 @@
+{
+  "name": "@my-namespace/my-app",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "description": "My App",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --outDir dist --project tsconfig.build.json",
+    "lint": "eslint --ext .ts src"
+  },
+  "devDependencies": {
+    "@my-namespace/eslint-config":"workspace:*",
+    "@my-namespace/tsconfig":"workspace:*",
+    "typescript": "^4.7.4"
+  }
+}
